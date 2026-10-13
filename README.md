@@ -74,6 +74,14 @@ config:
 { "disable": ["tmp-literal"] }
 ```
 
+## Contributing
+
+Issues and pull requests are open. The full credit policy (your PR keeps
+your authorship, no CLA) lives in
+[CONTRIBUTORS.md](https://github.com/athallajovian9-cyber/crosslint/blob/main/CONTRIBUTORS.md).
+Short version: open an issue describing the incident first, then send one
+function + one test.
+
 ## Adding a rule
 
 One function + one test = a complete contribution. Rules live in
