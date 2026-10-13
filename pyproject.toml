@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crosslint"
+version = "0.1.0"
+description = "Find portability hazards (Windows/macOS/Linux) in test suites and scripts before CI does."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Athalla Jovian Maharsa" }]
+keywords = ["portability", "windows", "lint", "ci", "testing", "shell"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/athallajovian9-cyber/crosslint"
+Issues = "https://github.com/athallajovian9-cyber/crosslint/issues"
+
+[project.scripts]
+crosslint = "crosslint.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["crosslint"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
