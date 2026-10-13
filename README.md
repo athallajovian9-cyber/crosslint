@@ -36,15 +36,19 @@ Every rule in crosslint exists because it broke a real project first:
 ## Install
 
 ```console
-$ pip install git+https://github.com/athallajovian9-cyber/crosslint
-$ crosslint --version
+$ pip install crosslint        # PyPI
+$ npm install -g crosslint     # npm (same Python core via a Node launcher)
 ```
 
-Or run it straight from a checkout — no dependencies, Python 3.9+:
+Or from source — no dependencies, Python 3.9+:
 
 ```console
+$ pip install git+https://github.com/athallajovian9-cyber/crosslint
 $ python -m crosslint tests/ scripts/
 ```
+
+Both registry packages ship the identical Python implementation: the npm
+package only adds a launcher, so there is exactly one linter to keep correct.
 
 ## Usage
 

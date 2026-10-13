@@ -1,0 +1,38 @@
+{
+  "name": "crosslint",
+  "version": "0.1.0",
+  "description": "Find portability hazards (Windows/macOS/Linux) in test suites and scripts before CI does. Zero-dependency, rule-based, Python 3.9+.",
+  "license": "MIT",
+  "author": "Athalla Jovian Maharsa",
+  "homepage": "https://github.com/athallajovian9-cyber/crosslint#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athallajovian9-cyber/crosslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/athallajovian9-cyber/crosslint/issues"
+  },
+  "keywords": [
+    "portability",
+    "windows",
+    "lint",
+    "ci",
+    "testing",
+    "shell",
+    "cross-platform"
+  ],
+  "bin": {
+    "crosslint": "bin/crosslint.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "prepack": "node scripts/sync.js"
+  }
+}
