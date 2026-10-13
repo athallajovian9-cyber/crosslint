@@ -5,6 +5,8 @@ dist/
 *.egg-info/
 .pytest_cache/
 npm/lib/
+npm/LICENSE
+npm/README.md
 npm/*.tgz
 dist/
 *.egg-info/
